@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+
+
+<style>
+
+.contactbody {
+background-color: #1a1a1a;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+/* Main content styling */
+.container2 {
+width: 80%;
+max-width: 1000px;
+margin: 40px auto;
+text-align: center;
+transition: opacity 1s ease-in-out;
+}
+
+.contact-h1 {
+font-size: 36px;
+color: #e76f17;
+}
+
+.contact-p {
+font-size: 18px;
+line-height: 1.6;
+color: lightgray;
+}
+
+/* Form styling */
+form {
+background-color: #2a2a2a;
+padding: 20px;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+margin-top: 30px;
+}
+
+form div {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+form input,
+form textarea {
+background-color: #3a3a3a;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px;
+width: 100%;
+margin-top: 5px;
+}
+
+form button {
+background-color: #ff7f27;
+color: white;
+padding: 12px 0;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+form button:hover {
+background-color: #e76f17;
+}
+
+/* Conditional display */
+.thank-you-message {
+display: none;
+font-size: 30px;
+color: orange;
+font-weight: bold;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#thank-you-trigger:checked ~ .container2 {
+opacity: 0;
+pointer-events: none;
+}
+
+#thank-you-trigger:checked ~ .thank-you-message {
+display: block;
+opacity: 1;
+}
+
+#thank-you-trigger {
+display: none;
+}
+
+/* Social Media Links */
+.social-links2 {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+font-size: 2rem;
+margin-top: 10px;
+}
+
+.social-links2 a {
+text-decoration: none;
+color: white;
+transition: color 0.3s;
+}
+
+.social-links2 a:hover {
+color: #ff7f27;
+}
+
+/* Footer Styling */
+footer {
+background-color: #333;
+text-align: center;
+padding: 15px;
+position: relative;
+bottom: 0;
+width: 100%;
+color: white;
+}
+</style>
+</head>
+
+<body class="contactbody">
+<header>
+<div class="logo dot-font" id="logo">
+<span class="letter-logo" style="--index:0">G</span>
+<span class="letter-logo" style="--index:1">o</span>
+<span class="letter-logo" style="--index:2">u</span>
+<span class="letter-logo" style="--index:3">r</span>
+<span class="letter-logo" style="--index:4">i</span>
+<span class="letter-logo" style="--index:5">n</span>
+<span class="letter-logo" style="--index:6">a</span>
+<span class="letter-logo" style="--index:7">t</span>
+<span class="letter-logo" style="--index:8">h</span>
+<span class="letter-logo" style="--index:9">.</span>
+<span class="letter-logo" style="--index:10">M</span>
+<span class="letter-logo" style="--index:11">.</span>
+<span class="letter-logo" style="--index:12">G</span>
+</div>
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Resume.html">Resume</a></li>
+  </ul>
+</nav>
+
+</header>
+
+
+<main>
+<input type="checkbox" id="thank-you-trigger">
+<div class="container2">
+<h1 class="contact-h1">Contact Me</h1>
+<p class="contact-p">I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out.</p>
+<h2 style="color:#e76f17;text-decoration:underline;text-align:center">Contact Form</h2>
+<form 
+  action="https://docs.google.com/forms/d/e/1FAIpQLSfQn3rpYlxyaUdvMVHswHLYEBfaa7IfSud7mYvFpmx5Moxm_Q/formResponse" 
+  method="POST" 
+  target="hidden_iframe" 
+  onsubmit="document.getElementById('thank-you-trigger').checked = true;">
+
+<div>
+<label for="name">Name:</label>
+<input type="text" id="name" name="entry.986730230" placeholder="Your Name" required />
+</div>
+<div>
+<label for="email">Email:</label>
+<input type="email" id="email" name="entry.529718145" placeholder="Your Email" required />
+</div>
+<div>
+<label for="message">Message:</label>
+<textarea id="message" name="entry.1703757584" placeholder="Your Message" rows="4" required></textarea>
+</div>
+<div>
+<button type="submit">Send Message</button>
+</div>
+</form>
+</div>
+<div class="thank-you-message">Thank You! Your message has been sent.<br><p style="text-align:center;color:white">Will try to reach out soon!</p></div>
+<p class="contact-p" style="text-align:center;"><b>Connect through mail, Instagram, or GitHub. Links are below:</b></p>
+<div class="social-links2">
+<a href="mailto:thegourinath@gmail.com" target="_blank"><img src="mail.webp" width="30px" height="30px"></a>
+<a href="https://github.com/dashboard" target="_blank"><img src="github.png" width="50px" height="50px"></a>
+<a href="https://www.instagram.com/the_.nath/" target="_blank"><img src="insta.webp" width="35px" height="35px"></a>
+</div>
+</main>
+
+<footer>
+<p>© 2025</p>
+</footer>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project - Portfolio</title>
+<link rel="stylesheet" href="styles.css" /> <!-- Link to your CSS file -->
+</head>
+<body>
+<header>
+<div class="logo dot-font" id="logo">
+<span class="letter-logo" style="--index:0">G</span>
+<span class="letter-logo" style="--index:1">o</span>
+<span class="letter-logo" style="--index:2">u</span>
+<span class="letter-logo" style="--index:3">r</span>
+<span class="letter-logo" style="--index:4">i</span>
+<span class="letter-logo" style="--index:5">n</span>
+<span class="letter-logo" style="--index:6">a</span>
+<span class="letter-logo" style="--index:7">t</span>
+<span class="letter-logo" style="--index:8">h</span>
+<span class="letter-logo" style="--index:9">.</span>
+<span class="letter-logo" style="--index:10">M</span>
+<span class="letter-logo" style="--index:11">.</span>
+<span class="letter-logo" style="--index:12">G</span>
+</div>
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Resume.html">Resume</a></li>
+  </ul>
+</nav>
+
+</header>
+
+<main>
+	<div class="container1">
+<h1 class="about-h1" style="color:#e76f17">Projects</h1>
+<h2 style="text-align:center;color:lightgray"><u><strong>1.Random Password Generator using Python</h2></u>
+<p style="color:white">This project was designed to help me strengthen my understanding of Python programming concepts, especially in areas like string manipulation, programming logic, and user interface design. The goal of this project was to create an interactive Python program that generates secure, random passwords based on the user's preferences, such as length and the inclusion of specific character types.</p>
+            <p style="color:white"><b><u>Aim:</u></b>To create a Python program that generates random passwords based on user preferences.</p>
+<p style="color:white"><b><u>Key Objectives</u></b><br><ol style="color:white;type="1" ><li>Provide a simple and user-friendly interface for generating passwords.</li><li>Allow users to customize passwords based on:
+<ul><li>
+Length (e.g., 8 to 20 characters)</li><li>
+
+Inclusion of lowercase letters, uppercase letters, digits, and special characters.</li></ul></li><li>Ensure high security by generating random and unpredictable passwords.</li><li>Promote good coding practices such as error handling and modularity.</li></ol></p>
+
+
+
+<p style="color:white">
+<b><u>Project Requirement:</u></b>
+</p>
+<p style="color:white">
+<b><u>Modules Needed:</u></b>
+</p>
+<ul style="color:white; font-weight:normal;">
+<li><b>string.ascii_letters:</b> Used to include all lowercase and uppercase letters in the password generation process.</li>
+<li><b>string.digits:</b> Ensures the inclusion of numeric values (0–9) as part of the password.</li>
+<li><b>string.punctuation:</b> Adds special characters like !, @, #, $ for enhanced security.</li>
+<li><b>random:</b> To generate random sequences of the specified characters.</li>
+</ul>
+
+<p style="color:white">
+<b><u>Features of the program</u></b>
+</p>
+<ul style="color:white; font-weight:normal;" >
+<li><b>Input Options:</b> Users specify the desired length and types of characters (letters, numbers, symbols) to include in the password.</li>
+<li><b>Validation:</b> Input validation ensures that passwords meet minimum security criteria (e.g., a mix of character types).</li>
+<li><b>Output Display:</b> Displays the generated password on the console or GUI, with an option to copy to the clipboard.</li>
+<li><b>Randomization Logic:</b> Ensures completely unique passwords with every generation.</li>
+<li><b>Error Handling:</b> Includes mechanisms to handle incorrect or invalid inputs gracefully.</li>
+</ul>
+
+<p style="color:white">
+<b><u>Code Structure</u></b>
+</p>
+<ol style="color:white; font-weight:normal;" type="1">
+<li><b>Main Script:</b> Handles user input and runs the password generator.</li>
+<li><b>Helper Functions:</b> Includes modularized functions for tasks like validating input, selecting character pools, and generating the password.</li>
+<li><b>GUI (Optional):</b> If using tkinter, create a separate script for handling the graphical interface.</li>
+</ol>
+<p style="color:white">
+<b><u>Learning Outcomes:</u></b>
+</p>
+<ul style="color:white; font-weight:normal;">
+<li><b>Strengthened understanding:</b> Enhanced skills in string manipulation and randomization techniques.</li>
+<li><b>Interface Design:</b> Developed abilities to create user-friendly interfaces using Python.</li>
+<li><b>Secure Password Techniques:</b> Improved knowledge of secure password generation and encryption concepts.</li>
+<li><b>Error Handling:</b> Practiced effective error handling to prevent system crashes and validate user inputs.</li>
+<li><b>Modular Programming:</b> Implemented modular code for better maintainability and scalability.</li>
+</ul>
+<p style="color:red">A detailed report regarding the same is attached in the drive folder</p>
+
+
+
+
+<h2 style="text-align:center;color:lightgray"><u><strong>2.Hangman Game using Python</h2></u>
+
+<p style="color:white">This project aimed at developing a fun and interactive Hangman game using Python. It allowed me to practice essential programming concepts such as logic building, string manipulation, and user interface design. The Hangman Game challenges players to guess a hidden word by guessing letters, making it both an engaging learning experience and a test of Python skills.</p>
+            <p style="color:white"><b><u>Aim:</u></b>To develop a simple Hangman Game using Python. <br>The main goal of this project is to create an interactive word-guessing game where players try to figure out a hidden word by guessing letters. </p>
+
+
+<p style="color:white"><b><u>Key Objectives</u></b><br><ol style="color:white;type="1" ><li>Create a simple, intuitive interface for gameplay.</li><li>Implement robust logic for:
+<ul><li>
+Tracking correct and incorrect guesses.</li><li>
+
+Updating the hidden word as letters are revealed.</li></ul></li><li>Ensure dynamic word selection for varied gameplay.</li></ol></p>
+
+
+<p style="color:white">
+<b><u>Project Requirement:</u></b>
+</p>
+<p style="color:white">
+<b><u>Modules Needed:</u></b>
+</p>
+<ul style="color:white; font-weight:normal;">
+<li><b>string.ascii_letters:</b> Used to validate player guesses, ensuring inputs are valid letters only.</li>
+<li><b>string.digits:</b> Added for optional numeric inclusion in words to make gameplay more challenging.</li>
+<li><b>string.punctuation:</b> Special characters were included to expand the word pool, introducing complexity.</li>
+<li><b>random:</b>Used to randomly select a word from a predefined list for gameplay.</li>
+</ul>
+
+
+<p style="color:white">
+    <b><u>Features of the Program</u></b>
+</p>
+<ul style="color:white; font-weight:normal;">
+    <li><b>Word Selection:</b> Dynamically selects a hidden word from a predefined list or database for players to guess.</li>
+    <li><b>Player Interaction:</b> Allows players to input guesses one letter at a time and validates their inputs to ensure only valid characters are accepted.</li>
+    <li><b>Progress Visualization:</b> Displays the current state of the word with correctly guessed letters revealed and placeholders for unguessed letters.</li>
+    <li><b>Incorrect Guesses:</b> Tracks incorrect attempts and provides visual feedback, such as a Hangman graphic or a counter showing remaining guesses.</li>
+    <li><b>Game Completion:</b> Ends the game when the player correctly guesses the word or exhausts their allowed attempts, displaying an appropriate success or failure message.</li>
+    <li><b>Error Handling:</b> Handles invalid inputs (e.g., numbers or special characters) and duplicate guesses gracefully to ensure smooth gameplay.</li>
+</ul>
+
+
+<p style="color:white">
+    <b><u>Code Structure</u></b>
+</p>
+<ol style="color:white; font-weight:normal;" type="1">
+    <li><b>Main Script:</b> Handles user input and runs the Hangman game logic.</li>
+    <li><b>Helper Functions:</b> Includes modularized functions for tasks like validating guesses, updating the hidden word, and tracking incorrect attempts.</li>
+    <li><b>Word Pool:</b> Implements a separate module for managing and randomly selecting words for gameplay.</li>
+    <li><b>GUI (Optional):</b> If using tkinter, create a separate script for handling the graphical interface of the Hangman game.</li>
+</ol>
+<p style="color:white">
+    <b><u>Learning Outcomes:</u></b>
+</p>
+<ul style="color:white; font-weight:normal;">
+    <li><b>Strengthened understanding:</b> Enhanced skills in implementing game logic and string manipulation techniques.</li>
+    <li><b>Interface Design:</b> Developed abilities to create engaging user-friendly interfaces using Python.</li>
+    <li><b>Gameplay Algorithms:</b> Improved knowledge of designing algorithms for tracking guesses and determining the game's outcome.</li>
+    <li><b>Error Handling:</b> Practiced effective error handling to manage invalid inputs and duplicate guesses smoothly.</li>
+    <li><b>Modular Programming:</b> Implemented modular code for better maintainability and scalability of the game.</li>
+</ul>
+
+
+
+
+
+
+
+<p style="color:white">The codes and reports for the above projects along with the output videos are attached in this drive. (Link: 
+<a href="https://drive.google.com/drive/folders/1iOaFiiYrmt8BHZJ-lMkDmKFamFX71v9l?usp=sharing" target="_blank">Click on this link to go to my Drive</a>)
+</p>
+<h2 style="text-align:center;color:lightgray"><u><strong>3.Agritech Platform</h2></u>
+<p style="color:white">This project is currently in its initial phase. We aim to build a website that connects farmers with modern agricultural technologies, innovative practices, and marketplaces. Our focus is on empowering farmers, improving operational efficiency, and maximizing agricultural yields.<br><br>India has immense untapped potential in the agricultural sector, which we seek to realize. Through this venture, we intend to rejuvenate the agricultural industry by leveraging advanced technology and ensuring its optimal utilization. Our agritech business holds the promise of significant growth and profitability for the country in the near future<br><br>Trial image of the website(under development):</p>
+
+<img src="Image trial website.png" style="display: block; margin: auto;" width="450" height="450">
+
+
+
+
+
+
+
+           
+</div>
+</main>
+
+<footer>
+<p style="font-weight:normal;colour:#aaa;">© 2025</p>
+</footer>
+</body>
+</html>
